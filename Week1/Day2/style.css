@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+}
+
+nav{
+	width:vw;
+	height: 7vh;
+	background-color: lightgreen;
+}
+ nav img {
+ 	width: 10%;
+ 	height:100%;
+ }
+#p1 {
+ 	text-align: right;
+ 	text-decoration: underline;
+ }

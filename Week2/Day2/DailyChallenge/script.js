@@ -1,10 +1,10 @@
 let sentence = "This dinner is not that bad ! You cook well";
 
-let wordNot = Number(sentence.indexOf("not"));
-//console.log(wordNot);
+let wordNot = sentence.indexOf("not");
+console.log(wordNot);
 
-let wordBad = Number(sentence.indexOf("bad"));
-//console.log(wordBad);
+let wordBad = sentence.indexOf("bad");
+console.log(wordBad);
 
 
 if(wordBad > wordNot && wordNot != -1){

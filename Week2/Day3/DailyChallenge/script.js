@@ -1,9 +1,9 @@
-let s="";
+// let s="";
 
-for(let i=0;i<6;i++){
-	s = "* ".repeat(i+1);
-	console.log(s);
-}
+// for(let i=0;i<6;i++){
+// 	s = "* ".repeat(i+1);
+// 	console.log(s);
+// }
 
 let s = "";
 for (let i = 1; i <= 6; i++) {

@@ -144,21 +144,32 @@
 //*** exercise6
 
 function hotelCost(){
-let sum=1;
-	let num_of_nights = Number(prompt("Please enter the number of nights that you like to stay in the hotel: "));
-	while(num_of_nights!=NaN || num_of_nights!=""){
-		sum *=num_of_nights;
+	let sum=140;
+	let num_of_nights;	
+	do{
+		num_of_nights = Number(prompt("Please enter the number of nights that you like to stay in the hotel: "));
+		sum *= num_of_nights;
+
+
+	} while(isNaN(num_of_nights) || num_of_nights==null)
+
+
+	console.log(sum); 
 	}
-	return num_of_nights;
-		console.log(num_of_nights);
-
-
-}
 
 hotelCost();
 
 
+function planeRideCost(){
+	let destination;
 
+	do{
+		destination = prompt("Please enter your destination: ");
+		sum *= num_of_nights;
+
+
+	} while(!isNaN(destination) || destination==="")
+}
 
 
 

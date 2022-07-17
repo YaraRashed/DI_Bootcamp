@@ -93,28 +93,42 @@
 
 // *** exercise 5 ***
 
-// let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
-// let ordinal = ["th","st","nd","rd"];
+let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+let ordinal = ["th","st","nd","rd"];
+let suffix = "th";
+color.forEach((element,index) => {
+    for(let i in ordinal){   
+        if(ordinal[i] === "st"){
+            console.log(`${index++}${ordinal[i]} choice is ${element}`);
+            break;
+    }
+        else if(ordinal[i] ==="nd"){
+            console.log(`${index++}${ordinal[i]} choice is ${element}`);
+            break;
+        }
+        else if(ordinal[i] ==="rd"){
+            console.log(`${index++}${ordinal[i]} choice is ${element}`);
+            break;
+        }
+        else console.log(`${index++}${ordinal[i]} choice is ${element}`);
+    }     
+});
 
-// color.forEach((element,index) => {
-//     console.log(`#${index+1} choice is ${element}`);
-//     if(element==="Violet")
-//         console.log("Yeah");
-//     else console.log("Nope");
-    
-// });
 
+ // e ==="st"  ? console.log(`${element[e]}${e} choice`) : "";
+        // e ==="nd" ? console.log(`${element[e]}${e} choice`) : "";
+        // e === "rd" ? console.log(`${element[e]}${e} choice`) : console.log(`${element[i]}${e} choice`);   
 // *** exercise 6 ***
 
-let bankAmount = 500;
-const vat = 0.17;
-let details = ["+350", "-32", "-52", "+167", "-2900"];
+// let bankAmount = 500;
+// const vat = 0.17;
+// let details = ["+350", "-32", "-52", "+167", "-2900"];
 
-function vat_cal(array){
-    for(let i in array){
-        array[i] = array[i] + (array[i]*vat);
-    }
-    return array;
-}
-let arr = vat_cal(details);
-console.log(arr);
+// function vat_cal(array){
+//     for(let i in array){
+//         array[i] = array[i] + (array[i]*vat);
+//     }
+//     return array;
+// }
+// let arr = vat_cal(details);
+// console.log(arr);
